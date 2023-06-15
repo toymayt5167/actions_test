@@ -24,10 +24,10 @@ jobs:
         with:
           aws-region: ${{ secrets.AWS_REGION }}
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
-          role-session-name: GitHubActions
+          role-session-name: cta20_githubaction_lambda
 
       - name: get-caller-identity is allowed to run on role.
-        run: aws sts get-caller-identity
+        run: aws cta20gr3 get-caller-identity
 
       - name: setup-python
         uses: actions/setup-python@v3
