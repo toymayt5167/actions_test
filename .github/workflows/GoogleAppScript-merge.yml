@@ -31,6 +31,7 @@ jobs:
       - name: Check clasp login status
         run: |
           clasp login --status
+          clasp login --no-localhost
 
       - name: Create clasprc.json
         run: |
