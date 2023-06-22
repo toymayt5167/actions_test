@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        
+
       - name: Setup Node.js 16.x
         uses: actions/setup-node@v2
         with:
@@ -29,8 +29,8 @@ jobs:
           npm install clasp -g
 
       - name: Check clasp login status
-          id: clasp_login
-          run: clasp login --status
+        run: |
+          clasp login --status
 
       - name: Create clasprc.json
         run: |
