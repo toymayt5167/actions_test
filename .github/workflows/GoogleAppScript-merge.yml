@@ -31,7 +31,6 @@ jobs:
       - name: Check clasp login status
         run: |
           clasp login --status
-          clasp login --no-localhost
 
       - name: Create clasprc.json
         run: |
@@ -39,4 +38,4 @@ jobs:
       
       - name: Deploy
         run: |
-          clasp deploy --deploymentId ${{secrets.PROD_DEPLOYMENT_ID}}
+          clasp push
