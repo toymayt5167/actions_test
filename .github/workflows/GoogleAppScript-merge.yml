@@ -9,6 +9,8 @@ on:
 defaults:
   run:
     working-directory: gas
+    run: |
+    pwd
 
 jobs:
   deploy:
