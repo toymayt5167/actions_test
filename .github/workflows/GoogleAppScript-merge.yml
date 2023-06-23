@@ -27,11 +27,11 @@ jobs:
         run: |
           npm init -y
           npm install clasp -g
-          pwd
 
-      - name: Check clasp login status
+      - name: ls Check
         run: |
-          clasp login --status
+          ls
+          pwd
 
       - name: Create clasprc.json
         run: |
