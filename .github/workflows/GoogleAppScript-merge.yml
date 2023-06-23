@@ -9,8 +9,6 @@ on:
 defaults:
   run:
     working-directory: gas
-    run: |
-    pwd
 
 jobs:
   deploy:
@@ -29,6 +27,7 @@ jobs:
         run: |
           npm init -y
           npm install clasp -g
+          pwd
 
       - name: Check clasp login status
         run: |
