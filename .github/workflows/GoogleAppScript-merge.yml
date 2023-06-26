@@ -31,7 +31,7 @@ jobs:
       - name: ls Check
         run: |
           pwd
-          ls
+          ls -a
           cat package.json
           
       - name: Create clasprc.json
