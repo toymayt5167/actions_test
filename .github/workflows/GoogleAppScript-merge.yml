@@ -1,4 +1,4 @@
-name: CD (Build and deploy to production)
+name: GAS-CD
 
 on:
   push:
