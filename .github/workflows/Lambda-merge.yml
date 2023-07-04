@@ -14,6 +14,11 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3
+      - name: ls Check
+        run: |
+          pwd
+          ls -a
+          less package.json
 
       - name: configure-aws-credentials
         uses: aws-actions/configure-aws-credentials@master
