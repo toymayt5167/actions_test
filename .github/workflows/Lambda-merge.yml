@@ -18,7 +18,6 @@ jobs:
         run: |
           pwd
           ls -a
-          less package.json
 
       - name: configure-aws-credentials
         uses: aws-actions/configure-aws-credentials@master
@@ -39,4 +38,4 @@ jobs:
         run: |
           pip3 install awscli
           cd lambda && zip -r package.zip ./*
-          aws lambda update-function-code --function-name test-http --zip-file fileb://package.zip --publish
+          aws lambda update-function-code --function-name sendtords --zip-file fileb://package.zip --publish
